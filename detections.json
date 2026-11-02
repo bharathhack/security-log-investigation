@@ -1,0 +1,66 @@
+{
+  "baseline": {
+    "total_events": 12,
+    "first_event": "2026-08-01T09:00:12Z",
+    "last_event": "2026-08-01T11:47:09Z",
+    "distinct_accounts": 6,
+    "distinct_ips": 4,
+    "password_logins": 9,
+    "login_failures": 7,
+    "login_successes": 2,
+    "control_events": 2,
+    "all_ips_documentation_range": true
+  },
+  "R1": [
+    {
+      "rule": "R1 Brute force",
+      "user": "stu-117",
+      "ip": "198.51.100.27",
+      "count": 3,
+      "start": "2026-08-01T09:03:44Z",
+      "end": "2026-08-01T09:04:18Z",
+      "rows": [
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "R2": [
+    {
+      "rule": "R2 Password spraying",
+      "ip": "203.0.113.42",
+      "accounts": [
+        "stu-209",
+        "stu-311",
+        "stu-415",
+        "stu-502"
+      ],
+      "count": 4,
+      "start": "2026-08-01T09:21:10Z",
+      "end": "2026-08-01T09:21:22Z",
+      "rows": [
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ],
+  "R3": [
+    {
+      "rule": "R3 Unusual access after targeting",
+      "user": "stu-311",
+      "ip": "192.0.2.99",
+      "device": "ios",
+      "success_at": "2026-08-01T11:47:09Z",
+      "targeted_by": "203.0.113.42",
+      "targeted_at": "2026-08-01T09:21:13Z",
+      "gap_minutes": 146,
+      "rows": [
+        8,
+        13
+      ]
+    }
+  ]
+}

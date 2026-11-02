@@ -1,0 +1,13 @@
+row,timestamp_utc,user_id,source_ip,ip_range,event,event_category,result,login_outcome,device
+2,2026-08-01T09:00:12Z,stu-104,192.0.2.18,TEST-NET-1,password_login,authentication,success,success,android
+3,2026-08-01T09:03:44Z,stu-117,198.51.100.27,TEST-NET-2,password_login,authentication,failure,failure,windows
+4,2026-08-01T09:04:01Z,stu-117,198.51.100.27,TEST-NET-2,password_login,authentication,failure,failure,windows
+5,2026-08-01T09:04:18Z,stu-117,198.51.100.27,TEST-NET-2,password_login,authentication,failure,failure,windows
+6,2026-08-01T09:05:03Z,stu-117,198.51.100.27,TEST-NET-2,account_lock,system_control,success,n/a,server
+7,2026-08-01T09:21:10Z,stu-209,203.0.113.42,TEST-NET-3,password_login,authentication,failure,failure,unknown
+8,2026-08-01T09:21:13Z,stu-311,203.0.113.42,TEST-NET-3,password_login,authentication,failure,failure,unknown
+9,2026-08-01T09:21:17Z,stu-415,203.0.113.42,TEST-NET-3,password_login,authentication,failure,failure,unknown
+10,2026-08-01T09:21:22Z,stu-502,203.0.113.42,TEST-NET-3,password_login,authentication,failure,failure,unknown
+11,2026-08-01T09:22:01Z,stu-209,203.0.113.42,TEST-NET-3,rate_limit,system_control,blocked,n/a,server
+12,2026-08-01T10:15:32Z,stu-104,192.0.2.18,TEST-NET-1,refresh_token,authentication,success,success,android
+13,2026-08-01T11:47:09Z,stu-311,192.0.2.99,TEST-NET-1,password_login,authentication,success,success,ios
